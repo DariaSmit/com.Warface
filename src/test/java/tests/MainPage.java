@@ -53,5 +53,17 @@ public class MainPage  extends testBase {
     });
     }
 
+    @Test
+    @Description("Проверка загрузки лаунчера игры")
+    @DisplayName("Проверка загрузки")
+    public void CheckLoadFile () {
+        step("открыть главную страницу", ()-> {
+            Selenide.open(baseUrl);
+        });
+
+    step("Загрузка лаунчера игры",()->{
+        $(".js-download").click();
+            });
+    }
 }
 

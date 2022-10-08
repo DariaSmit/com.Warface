@@ -2,7 +2,6 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 
-import config.CredentialsConfig;
 import helpers.AllureAttachments;
 import helpers.DriverUtils;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -17,7 +16,7 @@ public class testBase {
     @BeforeAll
     static void beforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
+
 
         Configuration.baseUrl = System.getProperty("baseUrl", "https://ru.warface.com");
         Configuration.browser = System.getProperty("browser", "Chrome");
