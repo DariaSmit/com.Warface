@@ -23,7 +23,7 @@ public class Promo extends testBase{
             Selenide.open(baseUrl);
         });
 
-        step("Promo 'Новая Сила'",()->{
+        step("Нажать Promo 'Новая Сила'",()->{
             $("#mr_block_news > div.cont_layout.type_promo > div.aside > div:nth-child(1) > a:nth-child(2)").click();
         });
         step("Нажать на заголовок 'О сезоне'",()->{
@@ -33,6 +33,33 @@ public class Promo extends testBase{
             $(".promo-btn__cont").click();
             $(".prize__info-wrap").shouldHave(Condition.text("Получи набор брони \"Авангард\" и набор оружия эксперта \"Отступник\" на 15 дней."));
             $(".prize__info-wrap").shouldHave(Condition.text("ЗАРЕГИСТРИРУЙСЯ"));
+            $(".modal__close").click();
+        });
+        step("Нажать на заголовок 'Моды'", ()->{
+            $(new ByText("Моды")).click();
+            $(".mods-content").shouldHave(Condition.text("Выполняй тематические контракты или используй в бою предмет с модами, чтобы получить специальную валюту (детали) для улучшения модов."));
+        });
+        step("Нажать на заголовок 'PvP-карты'", ()->{
+            $(new ByText("PvP-карты")).click();
+        });
+        step("Нажать на заголовок 'Боевой пропуск'", ()->{
+            $(new ByText("Боевой пропуск")).click();
+            $(new ByText("Снаряжение")).click();
+            $(new ByText("Снаряжение")).scrollIntoView(true);
+            $(".bp-card__name").shouldHave(Condition.text("Набор снаряжения \"Графит\" для штурмовика"));
+
+            $(new ByText("Снаряжение")).scrollIntoView(false);
+            $(new ByText("Брелоки")).click();
+            $(new ByText("Снаряжение")).scrollIntoView(true);
+            $(".bp-card__name").shouldHave(Condition.text("Брелок \"Реактор A\""));
+
+            $(new ByText("Снаряжение")).scrollIntoView(false);
+            $(new ByText("Достижения")).click();
+            $(new ByText("Снаряжение")).scrollIntoView(true);
+            $(".bp-card__name").shouldHave(Condition.text("Нашивка \"Система охлаждения\" "));
+        });
+        step("Нажать на заголовок 'Задания агентов'",()->{
+            $(new ByText("Боевой пропуск")).click();
         });
 
 
