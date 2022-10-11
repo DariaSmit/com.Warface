@@ -27,8 +27,8 @@ implements WebDriverProvider {
             desiredCapabilities.setBrowserName(config.browser());
             desiredCapabilities.setCapability("browserVersion",config.browserVersion());
             desiredCapabilities.setCapability("browserSize",config.browserSize());
-            //desiredCapabilities.setCapability("enableVNC", true);
-            //desiredCapabilities.setCapability("enableVideo", true);
+            desiredCapabilities.setCapability("enableVNC", true);
+            desiredCapabilities.setCapability("enableVideo", true);
             desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
             Configuration.browserCapabilities = desiredCapabilities;
 
