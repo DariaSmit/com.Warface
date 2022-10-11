@@ -29,7 +29,7 @@ allure {
 dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter:5.8.2',
             "org.aspectj:aspectjweaver:1.9.6",
-            "com.codeborne:selenide:6.8.1",
+            "com.codeborne:selenide:6.9.0",
             "io.qameta.allure:allure-selenide:2.19.0",
             "io.rest-assured:rest-assured:4.3.1",
             "io.qameta.allure:allure-rest-assured:2.19.0",
