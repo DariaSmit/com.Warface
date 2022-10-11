@@ -1,0 +1,245 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-EMSLMPO",
+    "children" : [ {
+      "name" : "6096@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Проверка загрузки",
+        "uid" : "9e8937949bd730fb",
+        "parentUid" : "d944cf9f1a2044ddefc8d2fc0ff213eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665474690720,
+          "stop" : 1665474693755,
+          "duration" : 3035
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка текста заголовков",
+        "uid" : "f85c0c38669ea934",
+        "parentUid" : "d944cf9f1a2044ddefc8d2fc0ff213eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665474677178,
+          "stop" : 1665474690619,
+          "duration" : 13441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка страницы",
+        "uid" : "5832b9167a3c0805",
+        "parentUid" : "d944cf9f1a2044ddefc8d2fc0ff213eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665474693763,
+          "stop" : 1665474698728,
+          "duration" : 4965
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d944cf9f1a2044ddefc8d2fc0ff213eb"
+    }, {
+      "name" : "12564@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Проверка загрузки",
+        "uid" : "ea53ff5d6448edc6",
+        "parentUid" : "3fd6584adf800a004c76aea5be7982a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474754836,
+          "stop" : 1665474754905,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка текста заголовков",
+        "uid" : "73a5ca6c27a52685",
+        "parentUid" : "3fd6584adf800a004c76aea5be7982a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474753303,
+          "stop" : 1665474754755,
+          "duration" : 1452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка страницы",
+        "uid" : "ae13c1dc6646f209",
+        "parentUid" : "3fd6584adf800a004c76aea5be7982a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474754922,
+          "stop" : 1665474754988,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 5,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3fd6584adf800a004c76aea5be7982a2"
+    }, {
+      "name" : "5420@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Проверка текста заголовков",
+        "uid" : "70cc4691f4cb693f",
+        "parentUid" : "0732f43ed8a02b7bbb1746b8af8409ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665475094027,
+          "stop" : 1665475131504,
+          "duration" : 37477
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0732f43ed8a02b7bbb1746b8af8409ca"
+    }, {
+      "name" : "4700@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Проверка текста заголовков",
+        "uid" : "c6fedaab4c9afc5d",
+        "parentUid" : "1b65ca3550ce4e02f4dcb46d581a2454",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474820989,
+          "stop" : 1665474822335,
+          "duration" : 1346
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1b65ca3550ce4e02f4dcb46d581a2454"
+    }, {
+      "name" : "6628@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Promo()",
+        "uid" : "fe3bbb275767324b",
+        "parentUid" : "6d8ece178ec86636c65dccbad3100aad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665402185378,
+          "stop" : 1665402193876,
+          "duration" : 8498
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6d8ece178ec86636c65dccbad3100aad"
+    }, {
+      "name" : "8200@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Promo()",
+        "uid" : "ca44bca119d51aab",
+        "parentUid" : "d59699325a6e9d8283391583a740fade",
+        "status" : "failed",
+        "time" : {
+          "start" : 1665402097265,
+          "stop" : 1665402115002,
+          "duration" : 17737
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d59699325a6e9d8283391583a740fade"
+    }, {
+      "name" : "8948@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Promo()",
+        "uid" : "4c5cb201c4e453b2",
+        "parentUid" : "07caa14993a0fe2ed4ee50550a346294",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665402383974,
+          "stop" : 1665402392242,
+          "duration" : 8268
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "07caa14993a0fe2ed4ee50550a346294"
+    }, {
+      "name" : "3468@DESKTOP-EMSLMPO.Test worker(14)",
+      "children" : [ {
+        "name" : "Promo()",
+        "uid" : "1b91c3831267e937",
+        "parentUid" : "0a6cfb5254a2ad8b99904b0e037c3beb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665402064372,
+          "stop" : 1665402065828,
+          "duration" : 1456
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0a6cfb5254a2ad8b99904b0e037c3beb"
+    } ],
+    "uid" : "5386f6b11084c0612c9219419a75dd41"
+  } ]
+}

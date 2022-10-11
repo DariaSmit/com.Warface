@@ -1,0 +1,64 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "tests.MainPage",
+    "children" : [ {
+      "name" : "Проверка загрузки",
+      "uid" : "ea53ff5d6448edc6",
+      "parentUid" : "285fb69f98c0ca3af96179ce5ed5447f",
+      "status" : "broken",
+      "time" : {
+        "start" : 1665474754836,
+        "stop" : 1665474754905,
+        "duration" : 69
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 1,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "Проверка текста заголовков",
+      "uid" : "70cc4691f4cb693f",
+      "parentUid" : "285fb69f98c0ca3af96179ce5ed5447f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665475094027,
+        "stop" : 1665475131504,
+        "duration" : 37477
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 3,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "285fb69f98c0ca3af96179ce5ed5447f"
+  }, {
+    "name" : "tests.Promo",
+    "children" : [ {
+      "name" : "Проверка страницы",
+      "uid" : "ae13c1dc6646f209",
+      "parentUid" : "a7e98f4cbbe3d87afb48ace666cdfb27",
+      "status" : "broken",
+      "time" : {
+        "start" : 1665474754922,
+        "stop" : 1665474754988,
+        "duration" : 66
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 5,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a7e98f4cbbe3d87afb48ace666cdfb27"
+  } ]
+}

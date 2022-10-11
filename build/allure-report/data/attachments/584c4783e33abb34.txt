@@ -1,0 +1,6 @@
+[2022-10-10T11:41:41.132Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-10T11:41:42.410Z] [SEVERE] https://pvp.vkplay.ru/vk/cup2 - Access to XMLHttpRequest at 'https://pro.pvp.gg/api/public/oracle/matches/future/?game_id=1' from origin 'https://pvp.vkplay.ru' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+[2022-10-10T11:41:42.411Z] [SEVERE] https://pro.pvp.gg/api/public/oracle/matches/future/?game_id=1 - Failed to load resource: net::ERR_FAILED
+[2022-10-10T11:41:42.501Z] [SEVERE] https://pvp.vkplay.ru/vk/js/chunk-vendors.3e0e520f.js 10:78876 
+[2022-10-10T11:41:42.684Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-10T11:41:42.711Z] [SEVERE] https://pvp.vkplay.ru/api/tournament/17536/bracket - Failed to load resource: the server responded with a status of 404 (Not Found)

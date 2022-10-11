@@ -1,0 +1,13 @@
+[2022-10-11T07:51:33.925Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:34.739Z] [SEVERE] https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js 37:10810 TypeError: Cannot read properties of undefined (reading '$swiper')
+    at a.swiper (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/app.08d57338cbc0b3275e48.js:1:74616)
+    at At.get (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:15972)
+    at At.evaluate (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:17122)
+    at a.swiper (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:18964)
+    at a.mounted (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/app.08d57338cbc0b3275e48.js:1:73916)
+    at St (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:14751)
+    at Object.insert (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:23227)
+    at E (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:56138)
+    at pn.__patch__ (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:57496)
+    at e._update (https://ru.warface.com/static/wf.mail.ru/promo/newpower/dist/js/vendor.80eb298a51456cbeafa1.js:38:31656)
+[2022-10-11T07:51:35.064Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED

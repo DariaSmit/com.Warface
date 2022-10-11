@@ -1,0 +1,2 @@
+[2022-10-11T08:02:42.066Z] [SEVERE] https://mc.yandex.com/sync_cookie_image_decide?token=9788.g8K--veoweNXOoZ6bSgmYV9YW7LvofKAXzrhoTCbTy_gdatAYz9yYTx6LpkHQIzRpHrYKDbdGMoixCG3MCXQog%2C%2C.moRJOD1dJVxBSxW8Vf14AW2VDPw%2C - Failed to load resource: the server responded with a status of 400 ()
+[2022-10-11T08:02:57.879Z] [SEVERE] https://wf.cdn.gmru.net/static/all/js/1link_processing.js?270 - Failed to load resource: the server responded with a status of 404 (Not Found)

@@ -1,0 +1,8 @@
+[2022-10-11T07:51:21.680Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:23.711Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:25.338Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:27.460Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:27.849Z] [SEVERE] https://wf.cdn.gmru.net/static/all/js/1link_processing.js?270 - Failed to load resource: the server responded with a status of 404 (Not Found)
+[2022-10-11T07:51:28.193Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:29.316Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+[2022-10-11T07:51:29.687Z] [SEVERE] https://connect.facebook.net/en_US/fbevents.js - Failed to load resource: net::ERR_NAME_NOT_RESOLVED

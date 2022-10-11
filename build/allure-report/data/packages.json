@@ -1,0 +1,68 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "MainPage",
+      "children" : [ {
+        "name" : "CheckLoadFile",
+        "uid" : "ea53ff5d6448edc6",
+        "parentUid" : "d81cb50fa1d50882a635de4992da4086",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474754836,
+          "stop" : 1665474754905,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "CheckMenu",
+        "uid" : "70cc4691f4cb693f",
+        "parentUid" : "d81cb50fa1d50882a635de4992da4086",
+        "status" : "passed",
+        "time" : {
+          "start" : 1665475094027,
+          "stop" : 1665475131504,
+          "duration" : 37477
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d81cb50fa1d50882a635de4992da4086"
+    }, {
+      "name" : "Promo",
+      "children" : [ {
+        "name" : "Promo",
+        "uid" : "ae13c1dc6646f209",
+        "parentUid" : "9980b1a039c38d694c44422db33adeb1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474754922,
+          "stop" : 1665474754988,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 5,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9980b1a039c38d694c44422db33adeb1"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ]
+}

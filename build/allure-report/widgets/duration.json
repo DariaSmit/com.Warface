@@ -1,0 +1,31 @@
+[ {
+  "uid" : "70cc4691f4cb693f",
+  "name" : "Проверка текста заголовков",
+  "time" : {
+    "start" : 1665475094027,
+    "stop" : 1665475131504,
+    "duration" : 37477
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea53ff5d6448edc6",
+  "name" : "Проверка загрузки",
+  "time" : {
+    "start" : 1665474754836,
+    "stop" : 1665474754905,
+    "duration" : 69
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ae13c1dc6646f209",
+  "name" : "Проверка страницы",
+  "time" : {
+    "start" : 1665474754922,
+    "stop" : 1665474754988,
+    "duration" : 66
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

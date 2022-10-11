@@ -1,0 +1,61 @@
+{
+  "7d1eb51b9e55d49b3b9e80ae541fc853" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "70cc4691f4cb693f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1665475094027,
+        "stop" : 1665475131504,
+        "duration" : 37477
+      }
+    } ]
+  },
+  "aadcd1975a190be94a383055295481b4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ae13c1dc6646f209",
+      "status" : "broken",
+      "statusDetails" : "Could not start a new session. Unable to parse remote response: <html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx/1.14.2</center>\r\n</body>\r\n</html>\r\n \nHost info: host: 'DESKTOP-EMSLMPO', ip: '192.168.56.1'",
+      "time" : {
+        "start" : 1665474754922,
+        "stop" : 1665474754988,
+        "duration" : 66
+      }
+    } ]
+  },
+  "e82c0f68ca42339cfe499a57bf44674b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ea53ff5d6448edc6",
+      "status" : "broken",
+      "statusDetails" : "Could not start a new session. Unable to parse remote response: <html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx/1.14.2</center>\r\n</body>\r\n</html>\r\n \nHost info: host: 'DESKTOP-EMSLMPO', ip: '192.168.56.1'",
+      "time" : {
+        "start" : 1665474754836,
+        "stop" : 1665474754905,
+        "duration" : 69
+      }
+    } ]
+  }
+}

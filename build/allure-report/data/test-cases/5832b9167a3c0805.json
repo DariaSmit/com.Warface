@@ -1,0 +1,683 @@
+{
+  "uid" : "5832b9167a3c0805",
+  "name" : "Проверка страницы",
+  "fullName" : "tests.Promo.Promo",
+  "historyId" : "aadcd1975a190be94a383055295481b4",
+  "time" : {
+    "start" : 1665474693763,
+    "stop" : 1665474698728,
+    "duration" : 4965
+  },
+  "description" : "Проверка страинцы ПРОМО нового сезона",
+  "descriptionHtml" : "<p>Проверка страинцы ПРОМО нового сезона</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeAll",
+    "time" : {
+      "start" : 1665474693760,
+      "stop" : 1665474693761,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeEach",
+    "time" : {
+      "start" : 1665474693764,
+      "stop" : 1665474693764,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Проверка страинцы ПРОМО нового сезона",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "открыть главную страницу",
+      "time" : {
+        "start" : 1665474693764,
+        "stop" : 1665474694335,
+        "duration" : 571
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"open\") https://ru.warface.com",
+        "time" : {
+          "start" : 1665474693764,
+          "stop" : 1665474694335,
+          "duration" : 571
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать Promo 'Новая Сила'",
+      "time" : {
+        "start" : 1665474694335,
+        "stop" : 1665474695142,
+        "duration" : 807
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"#mr_block_news > div.cont_layout.type_promo > div.aside > div:nth-child(1) > a:nth-child(1) > img\") click()",
+        "time" : {
+          "start" : 1665474694336,
+          "stop" : 1665474695142,
+          "duration" : 806
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на заголовок 'О сезоне'",
+      "time" : {
+        "start" : 1665474695142,
+        "stop" : 1665474695198,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by text: О сезоне\") click()",
+        "time" : {
+          "start" : 1665474695143,
+          "stop" : 1665474695198,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на кнопку 'Получить подарки'",
+      "time" : {
+        "start" : 1665474695198,
+        "stop" : 1665474695906,
+        "duration" : 708
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\".promo-btn__cont\") click()",
+        "time" : {
+          "start" : 1665474695199,
+          "stop" : 1665474695562,
+          "duration" : 363
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".prize__info-wrap\") should have(text \"Получи набор брони \"Авангард\" и набор оружия эксперта \"Отступник\" на 15 дней.\")",
+        "time" : {
+          "start" : 1665474695563,
+          "stop" : 1665474695846,
+          "duration" : 283
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".prize__info-wrap\") should have(text \"ЗАРЕГИСТРИРУЙСЯ\")",
+        "time" : {
+          "start" : 1665474695847,
+          "stop" : 1665474695862,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".modal__close\") click()",
+        "time" : {
+          "start" : 1665474695862,
+          "stop" : 1665474695906,
+          "duration" : 44
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на заголовок 'Моды'",
+      "time" : {
+        "start" : 1665474695906,
+        "stop" : 1665474696830,
+        "duration" : 924
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by text: Моды\") click()",
+        "time" : {
+          "start" : 1665474695906,
+          "stop" : 1665474696239,
+          "duration" : 333
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".mods-content\") should have(text \"Выполняй тематические контракты или используй в бою предмет с модами, чтобы получить специальную валюту (детали) для улучшения модов.\")",
+        "time" : {
+          "start" : 1665474696239,
+          "stop" : 1665474696830,
+          "duration" : 591
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на заголовок 'PvP-карты'",
+      "time" : {
+        "start" : 1665474696830,
+        "stop" : 1665474696889,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by text: PvP-карты\") click()",
+        "time" : {
+          "start" : 1665474696830,
+          "stop" : 1665474696889,
+          "duration" : 59
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на заголовок 'Боевой пропуск'",
+      "time" : {
+        "start" : 1665474696889,
+        "stop" : 1665474697859,
+        "duration" : 970
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by text: Боевой пропуск\") click()",
+        "time" : {
+          "start" : 1665474696889,
+          "stop" : 1665474696946,
+          "duration" : 57
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Снаряжение\") click()",
+        "time" : {
+          "start" : 1665474696946,
+          "stop" : 1665474697013,
+          "duration" : 67
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Снаряжение\") scroll into view(true)",
+        "time" : {
+          "start" : 1665474697013,
+          "stop" : 1665474697127,
+          "duration" : 114
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"by text: Снаряжение\") get wrapped element()",
+          "time" : {
+            "start" : 1665474697013,
+            "stop" : 1665474697122,
+            "duration" : 109
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".bp-card__name\") should have(text \"Набор снаряжения \"Графит\" для штурмовика\")",
+        "time" : {
+          "start" : 1665474697127,
+          "stop" : 1665474697666,
+          "duration" : 539
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Снаряжение\") scroll into view(false)",
+        "time" : {
+          "start" : 1665474697666,
+          "stop" : 1665474697678,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"by text: Снаряжение\") get wrapped element()",
+          "time" : {
+            "start" : 1665474697666,
+            "stop" : 1665474697672,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Брелоки\") click()",
+        "time" : {
+          "start" : 1665474697678,
+          "stop" : 1665474697735,
+          "duration" : 57
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Снаряжение\") scroll into view(true)",
+        "time" : {
+          "start" : 1665474697735,
+          "stop" : 1665474697746,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"by text: Снаряжение\") get wrapped element()",
+          "time" : {
+            "start" : 1665474697735,
+            "stop" : 1665474697742,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".bp-card__name\") should have(text \"Брелок \"Реактор A\"\")",
+        "time" : {
+          "start" : 1665474697747,
+          "stop" : 1665474697762,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Снаряжение\") scroll into view(false)",
+        "time" : {
+          "start" : 1665474697762,
+          "stop" : 1665474697774,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"by text: Снаряжение\") get wrapped element()",
+          "time" : {
+            "start" : 1665474697763,
+            "stop" : 1665474697770,
+            "duration" : 7
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Достижения\") click()",
+        "time" : {
+          "start" : 1665474697774,
+          "stop" : 1665474697827,
+          "duration" : 53
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\"by text: Снаряжение\") scroll into view(true)",
+        "time" : {
+          "start" : 1665474697827,
+          "stop" : 1665474697843,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"by text: Снаряжение\") get wrapped element()",
+          "time" : {
+            "start" : 1665474697827,
+            "stop" : 1665474697838,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "$(\".bp-card__name\") should have(text \"Нашивка \"Система охлаждения\" \")",
+        "time" : {
+          "start" : 1665474697843,
+          "stop" : 1665474697859,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 17,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать на заголовок 'Задания агентов'",
+      "time" : {
+        "start" : 1665474697860,
+        "stop" : 1665474697904,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "$(\"by text: Боевой пропуск\") click()",
+        "time" : {
+          "start" : 1665474697860,
+          "stop" : 1665474697904,
+          "duration" : 44
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 36,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "afterEach",
+    "time" : {
+      "start" : 1665474697905,
+      "stop" : 1665474698728,
+      "duration" : 823
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d6d8fae28bcfbd5d",
+      "name" : "Screenshot",
+      "source" : "d6d8fae28bcfbd5d.png",
+      "type" : "image/png",
+      "size" : 1343766
+    }, {
+      "uid" : "4d6a696321becb2c",
+      "name" : "Page source",
+      "source" : "4d6a696321becb2c.html",
+      "type" : "text/plain",
+      "size" : 75354
+    }, {
+      "uid" : "c5f7a230a28b60dc",
+      "name" : "Browser console logs",
+      "source" : "c5f7a230a28b60dc.txt",
+      "type" : "text/plain",
+      "size" : 1691
+    }, {
+      "uid" : "28fdb5cd92c1d5e0",
+      "name" : "Video",
+      "source" : "28fdb5cd92c1d5e0.html",
+      "type" : "text/html",
+      "size" : 193
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:tests.Promo]/[method:Promo()]"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-EMSLMPO"
+  }, {
+    "name" : "thread",
+    "value" : "6096@DESKTOP-EMSLMPO.Test worker(14)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "tests.Promo"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.Promo"
+  }, {
+    "name" : "testMethod",
+    "value" : "Promo"
+  }, {
+    "name" : "suite",
+    "value" : "tests.Promo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5832b9167a3c0805.json",
+  "parameterValues" : [ ]
+}

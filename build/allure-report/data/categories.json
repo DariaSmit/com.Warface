@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Could not start a new session. Unable to parse remote response: <html>\r\n<head><title>401 Authorization Required</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>401 Authorization Required</h1></center>\r\n<hr><center>nginx/1.14.2</center>\r\n</body>\r\n</html>\r\n \nHost info: host: 'DESKTOP-EMSLMPO', ip: '192.168.56.1'",
+      "children" : [ {
+        "name" : "Проверка загрузки",
+        "uid" : "ea53ff5d6448edc6",
+        "parentUid" : "87e79c407552297bf1a1786e4f51641b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474754836,
+          "stop" : 1665474754905,
+          "duration" : 69
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 1,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Проверка страницы",
+        "uid" : "ae13c1dc6646f209",
+        "parentUid" : "87e79c407552297bf1a1786e4f51641b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1665474754922,
+          "stop" : 1665474754988,
+          "duration" : 66
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 5,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "87e79c407552297bf1a1786e4f51641b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

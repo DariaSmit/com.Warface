@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Oct 11 10:58:14 MSK 2022","Tue Oct 11 10:58:51 MSK 2022","37477","","tests.MainPage","","tests.MainPage","CheckMenu","Проверка текста заголовков","Проверка главной стрнаницы"
+"broken","Tue Oct 11 10:52:34 MSK 2022","Tue Oct 11 10:52:34 MSK 2022","69","","tests.MainPage","","tests.MainPage","CheckLoadFile","Проверка загрузки","Проверка загрузки лаунчера игры"
+"broken","Tue Oct 11 10:52:34 MSK 2022","Tue Oct 11 10:52:34 MSK 2022","66","","tests.Promo","","tests.Promo","Promo","Проверка страницы","Проверка страинцы ПРОМО нового сезона"
