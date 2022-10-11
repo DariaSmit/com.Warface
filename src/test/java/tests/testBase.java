@@ -4,6 +4,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 
 import config.CredentialsConfig;
 import helpers.AllureAttachments;
+import helpers.DriverSettings;
 import helpers.DriverUtils;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
@@ -18,6 +19,7 @@ public class testBase {
     static void beforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
+        DriverSettings.configure();
 
 
         Configuration.baseUrl = System.getProperty("baseUrl", "https://ru.warface.com");
