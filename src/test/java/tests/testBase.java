@@ -19,7 +19,7 @@ public class testBase {
     static void beforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
-        DriverSettings.configure();
+
 
 
         Configuration.baseUrl = System.getProperty("baseUrl", "https://ru.warface.com");
