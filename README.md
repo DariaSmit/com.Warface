@@ -32,3 +32,8 @@
 # Запуск с терминала
 локальный запуск:
 >gradle clean test
+
+## AllureTestOps
+<img src="https://user-images.githubusercontent.com/110921807/195179267-2ab85564-1544-4baa-8ded-c21a3f9148da.png" width="60%">
+
+
