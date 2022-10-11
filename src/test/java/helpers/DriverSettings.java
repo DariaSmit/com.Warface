@@ -1,43 +1,65 @@
 package helpers;
 
+import com.codeborne.selenide.WebDriverProvider;
 import config.Project;
 import com.codeborne.selenide.Configuration;
+import config.ProjectConfig;
+import org.aeonbits.owner.ConfigFactory;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.LocalFileDetector;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DriverSettings {
+public class DriverSettings
+implements WebDriverProvider {
+        public static ProjectConfig config = ConfigFactory.create(ProjectConfig.class, System.getProperties());
 
-    public static void configure() {
-        Configuration.browser = Project.config.browser();
-        Configuration.browserVersion = Project.config.browserVersion();
-        Configuration.browserSize = Project.config.browserSize();
-//        Configuration.baseUrl = App.config.webUrl();
+        @Override
+        public WebDriver createDriver(Capabilities capabilities) {
+            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+            desiredCapabilities.setBrowserName(config.browser());
+            desiredCapabilities.setCapability("browserVersion",config.browserVersion());
+            desiredCapabilities.setCapability("browserSize",config.browserSize());
+            desiredCapabilities.setCapability("enableVNC", true);
+            desiredCapabilities.setCapability("enableVideo", true);
+            desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
+            Configuration.browserCapabilities = desiredCapabilities;
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        ChromeOptions chromeOptions = new ChromeOptions();
-
-        chromeOptions.addArguments("--no-sandbox");
-        chromeOptions.addArguments("--disable-infobars");
-        chromeOptions.addArguments("--disable-popup-blocking");
-        chromeOptions.addArguments("--disable-notifications");
-        chromeOptions.addArguments("--lang=en-en");
-
-        if (Project.isWebMobile()) { // for chrome only
-            Map<String, Object> mobileDevice = new HashMap<>();
-            mobileDevice.put("deviceName", Project.config.browserMobileView());
-            chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
+            return getRemoteWebDriver(desiredCapabilities);
         }
 
-        if (Project.isRemoteWebDriver()) {
-            capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", true);
-            Configuration.remote = Project.config.remoteDriverUrl();
+        private ChromeOptions getChromeOptions() {
+            ChromeOptions chromeOptions = new ChromeOptions();
+
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-infobars");
+            chromeOptions.addArguments("--disable-popup-blocking");
+            chromeOptions.addArguments("--disable-notifications");
+            chromeOptions.addArguments("--lang=ru-ru");
+
+            return chromeOptions;
         }
 
-        capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-        Configuration.browserCapabilities = capabilities;
+        private WebDriver getRemoteWebDriver(DesiredCapabilities capabilities) {
+            RemoteWebDriver remoteWebDriver = new RemoteWebDriver(getRemoteWebdriverUrl(), capabilities);
+            remoteWebDriver.setFileDetector(new LocalFileDetector());
+
+            return remoteWebDriver;
+        }
+
+        private URL getRemoteWebdriverUrl() {
+            try {
+                return new URL(config.remoteUrl());
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
     }
-}
