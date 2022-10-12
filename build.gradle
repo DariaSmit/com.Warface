@@ -34,19 +34,17 @@ allure {
 }
 
 dependencies {
-    testImplementation('org.junit.jupiter:junit-jupiter:5.8.2',
+    testImplementation(
             "org.aspectj:aspectjweaver:1.9.6",
-            "com.codeborne:selenide:6.9.0",
-            "io.qameta.allure:allure-selenide:2.19.0",
+            "com.codeborne:selenide:$selenideVersion",
+            "io.qameta.allure:allure-selenide:$allureVersion",
             "io.rest-assured:rest-assured:4.3.1",
-            "io.qameta.allure:allure-rest-assured:2.19.0",
+            "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.aeonbits.owner:owner:1.0.12",
-            'org.seleniumhq.selenium:selenium-java:4.5.0',
             "org.assertj:assertj-core:3.19.0",
-            'org.slf4j:slf4j-simple:2.0.3',
-            'org.junit.jupiter:junit-jupiter-engine',
-            'org.seleniumhq.selenium:selenium-remote-driver:4.5.0',
-            'io.github.bonigarcia:webdrivermanager:5.3.0')
+            "org.slf4j:slf4j-simple:1.7.29",
+            'io.github.bonigarcia:webdrivermanager:5.1.1',
+            "org.junit.jupiter:junit-jupiter:$junitVersion")
 
 }
 tasks.withType(JavaCompile) {
