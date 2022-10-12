@@ -36,4 +36,11 @@
 ## AllureTestOps
 <img src="https://user-images.githubusercontent.com/110921807/195179267-2ab85564-1544-4baa-8ded-c21a3f9148da.png" width="60%">
 
+## Видео прохождения тестов
+
+
+https://user-images.githubusercontent.com/110921807/195311615-edbfe498-0050-4151-90fe-0d19d8283673.mp4
+
+
+
 
