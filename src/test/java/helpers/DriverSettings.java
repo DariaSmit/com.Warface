@@ -17,49 +17,35 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DriverSettings
-implements WebDriverProvider {
-        public static ProjectConfig config = ConfigFactory.create(ProjectConfig.class, System.getProperties());
+public class DriverSettings {
+        public static void configure() {
+            Configuration.browser = Project.config.browser();
+            Configuration.browserVersion = Project.config.browserVersion();
+            Configuration.browserSize = Project.config.browserSize();
+//        Configuration.baseUrl = App.config.webUrl();
 
-        @Override
-        public WebDriver createDriver(Capabilities capabilities) {
-            DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-            desiredCapabilities.setBrowserName(config.browser());
-            desiredCapabilities.setCapability("browserVersion",config.browserVersion());
-            desiredCapabilities.setCapability("browserSize",config.browserSize());
-            desiredCapabilities.setCapability("enableVNC", true);
-            desiredCapabilities.setCapability("enableVideo", true);
-            desiredCapabilities.setCapability(ChromeOptions.CAPABILITY, getChromeOptions());
-            Configuration.browserCapabilities = desiredCapabilities;
-
-            return getRemoteWebDriver(desiredCapabilities);
-        }
-
-        private ChromeOptions getChromeOptions() {
+            DesiredCapabilities capabilities = new DesiredCapabilities();
             ChromeOptions chromeOptions = new ChromeOptions();
 
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--disable-infobars");
             chromeOptions.addArguments("--disable-popup-blocking");
             chromeOptions.addArguments("--disable-notifications");
-            chromeOptions.addArguments("--lang=ru-ru");
+            chromeOptions.addArguments("--lang=en-en");
 
-            return chromeOptions;
-        }
-
-        private WebDriver getRemoteWebDriver(DesiredCapabilities capabilities) {
-            RemoteWebDriver remoteWebDriver = new RemoteWebDriver(getRemoteWebdriverUrl(), capabilities);
-            remoteWebDriver.setFileDetector(new LocalFileDetector());
-
-            return remoteWebDriver;
-        }
-
-        private URL getRemoteWebdriverUrl() {
-            try {
-                return new URL(config.remoteUrl());
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
+            if (Project.isWebMobile()) { // for chrome only
+                Map<String, Object> mobileDevice = new HashMap<>();
+                mobileDevice.put("deviceName", Project.config.browserMobileView());
+                chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
             }
-            return null;
+
+            if (Project.isRemoteWebDriver()) {
+                capabilities.setCapability("enableVNC", true);
+                capabilities.setCapability("enableVideo", true);
+                Configuration.remote = Project.config.remoteUrl();
+            }
+
+            capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+            Configuration.browserCapabilities = capabilities;
         }
-    }
+}
